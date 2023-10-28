@@ -9,8 +9,7 @@ const Footer = () => {
                 <Card.Body>
                 <img className='FooterLogo' src="https://www.smartdepot.co.in/images/smart-depot1.png" alt="" />
                 </Card.Body>
-                <Card.Header as="p">© All Rights are Reserved... Designed by Ananthu M A....
-Distributed By Smart-Depot....</Card.Header>
+                <Card.Header as="p">© All Rights are Reserved... Designed by Ananthu M A.... Distributed By Smart-Depot....</Card.Header>
             </Card>
         </>
     )
