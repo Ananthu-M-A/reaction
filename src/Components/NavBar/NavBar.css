@@ -1,6 +1,7 @@
 .NavImg{
     width: 200px;
     margin-left: 0.5rem;
+    cursor: pointer;
 }
 .Icon{
     width: 100%;

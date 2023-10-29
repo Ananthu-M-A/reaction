@@ -5,7 +5,7 @@ import { Card } from 'react-bootstrap';
 const Footer = () => {
     return (
         <>
-            <Card className='bg-dark text-light rounded-0'>
+            <Card className='bg-dark text-center text-light rounded-0'>
                 <Card.Body>
                 <img className='FooterLogo' src="https://www.smartdepot.co.in/images/smart-depot1.png" alt="" />
                 </Card.Body>
