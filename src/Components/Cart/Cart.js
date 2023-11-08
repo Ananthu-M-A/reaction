@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Wishlist = () => {
+const Cart = () => {
   return (  
     <>
         <h1 className='text-center m-5'>Your cart is empty...</h1>
@@ -8,4 +8,4 @@ const Wishlist = () => {
   )
 }
 
-export default Wishlist;
+export default Cart;

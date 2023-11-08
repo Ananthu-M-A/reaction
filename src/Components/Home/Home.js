@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css';
 import { Row, Col, Button, Card, Container } from 'react-bootstrap';
 import { CartPlus, Eye, Heart } from 'react-bootstrap-icons';
+import { useNavigate } from 'react-router-dom';
 
 const productsData = [
   {
@@ -55,6 +56,7 @@ const productsData = [
 ];
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <Container>
       <Row className='p-3'>
@@ -64,13 +66,13 @@ const Home = () => {
               <Card.Img className='ImageProduct p-3 m-4' variant="top" src={product.image_url} />
               <Row className='p-1'>
                 <Col>
-                  <Button className='g-3' variant="dark"><CartPlus className='Icon' /></Button>
+                  <Button onClick={()=>navigate('/cart')} className='g-3' variant="dark"><CartPlus className='Icon' /></Button>
                 </Col>
                 <Col>
-                  <Button className='g-3' variant="dark"><Eye className='Icon' /></Button>
+                  <Button onClick={()=>navigate('/productDetail')}  className='g-3' variant="dark"><Eye className='Icon' /></Button>
                 </Col>
                 <Col>
-                  <Button className='g-3' variant="dark"><Heart className='Icon' /></Button>
+                  <Button onClick={()=>navigate('/wishlist')}  className='g-3' variant="dark"><Heart className='Icon' /></Button>
                 </Col>
               </Row>
               <Card.Body>
