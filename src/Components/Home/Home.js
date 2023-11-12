@@ -59,6 +59,15 @@ const Home = () => {
   const navigate = useNavigate();
   return (
     <Container>
+
+      {/* <button onClick={() => {
+        Firebase.firestore().collection('products').get().then(snapshot => {
+          snapshot.forEach((obj) => {
+            console.log(obj.data());
+          })
+        })
+      }} >Load Data</button> */}
+      
       <Row className='p-3'>
         {productsData.map((product) => (
           <Col key={product.id}>
@@ -66,13 +75,13 @@ const Home = () => {
               <Card.Img className='ImageProduct p-3 m-4' variant="top" src={product.image_url} />
               <Row className='p-1'>
                 <Col>
-                  <Button onClick={()=>navigate('/cart')} className='g-3' variant="dark"><CartPlus className='Icon' /></Button>
+                  <Button onClick={() => navigate('/cart')} className='g-3' variant="dark"><CartPlus className='Icon' /></Button>
                 </Col>
                 <Col>
-                  <Button onClick={()=>navigate('/productDetail')}  className='g-3' variant="dark"><Eye className='Icon' /></Button>
+                  <Button onClick={() => navigate('/productDetail')} className='g-3' variant="dark"><Eye className='Icon' /></Button>
                 </Col>
                 <Col>
-                  <Button onClick={()=>navigate('/wishlist')}  className='g-3' variant="dark"><Heart className='Icon' /></Button>
+                  <Button onClick={() => navigate('/wishlist')} className='g-3' variant="dark"><Heart className='Icon' /></Button>
                 </Col>
               </Row>
               <Card.Body>
