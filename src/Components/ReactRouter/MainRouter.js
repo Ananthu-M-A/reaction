@@ -1,6 +1,8 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Home from '../Home/Home';
+import Signup from '../Signup/Signup';
+import Login from '../Login/Login';
+import Products from '../Products/Products';
 import Profile from '../Profile/Profile';
 import ProductDetail from '../ProductDetail/ProductDetail';
 import Wishlist from '../Wishlist/Wishlist';
@@ -12,7 +14,9 @@ import Error from '../Error/Error';
 const MainRouter = () => {
   return (
     <Routes>
-      <Route path='/' element={<Home />} />
+      <Route path='/signup' element={<Signup />} />
+      <Route path='/login' element={<Login />} />
+      <Route path='/' element={<Products />} />
       <Route path='/profile' element={<Profile />} />
       <Route path='/productDetail' element={<ProductDetail />} />
       <Route path='/wishlist' element={<Wishlist />} />

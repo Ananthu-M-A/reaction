@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css';
+import './Products.css';
 import { Row, Col, Button, Card, Container } from 'react-bootstrap';
 import { CartPlus, Eye, Heart } from 'react-bootstrap-icons';
 import { useNavigate } from 'react-router-dom';
@@ -55,7 +55,7 @@ const productsData = [
   }
 ];
 
-const Home = () => {
+const Products = () => {
   const navigate = useNavigate();
   return (
     <Container>
@@ -98,4 +98,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Products;

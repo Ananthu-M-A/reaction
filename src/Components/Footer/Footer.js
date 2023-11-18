@@ -7,7 +7,7 @@ const Footer = () => {
     const navigate = useNavigate();
     return (
         <>
-            <Card className='bg-dark text-center text-light rounded-0'>
+            <Card className='footer bg-dark text-center text-light rounded-0'>
                 <Card.Body>
                 <img onClick={()=>{navigate('/')}} className='FooterLogo' src="https://www.smartdepot.co.in/images/smart-depot1.png" alt="" />
                 </Card.Body>

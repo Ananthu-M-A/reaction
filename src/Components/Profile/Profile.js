@@ -1,24 +1,23 @@
 import React from 'react';
-import handleSubmit from '../../Handles/HandleSubmit';
 import { useRef } from 'react';
 
 const Wishlist = () => {
 
   const dataRef = useRef()
 
-  const submithandler = (e) => {
-    e.preventDefault();
-    handleSubmit(dataRef.current.value)
-    dataRef.current.value = "";
-  }
-
-  return (  
+  return (
     <>
-        <h1 className='text-center m-5'>Account Profile</h1>
-        <form onSubmit={submithandler}>
-          <input type="text" ref={dataRef} />
-          <button type="submit">Save</button>
-        </form>
+      <div className='container-fluid'>
+        <div className='row text-center p-5'>
+          <h1 className='text-center mb-5'>Account Profile</h1>
+          <div className='col'>
+            <form>
+              <input type="file" ref={dataRef} multiple />
+              <button className='btn btn-outline-dark' type="submit">Save</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </>
   )
 }
