@@ -10,7 +10,7 @@ const NavBar = () => {
     <>
       <Navbar bg="dark" variant="dark">
         <Container>
-        <img className='NavImg' onClick={() => navigate('/')} src="https://www.smartdepot.co.in/images/smart-depot1.png" alt="" />
+        <img className='NavImg' onClick={() => navigate('/')} src="https://www.smartdepot.co.in/images/smart-depot1.png" alt="LOGO" />
           <Navbar.Brand href="#home"></Navbar.Brand>
           <Form className="d-flex w-50">
             <Form.Control
